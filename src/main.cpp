@@ -1,12 +1,13 @@
 ﻿#include <iostream>
 #include "functions.h"
+#include "test.h"
 
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	ArrayContainer container1, container2, concontainer;
+	/*ArrayContainer container1, container2, concontainer;
 
 	int n1 = 0; int n2 = 0;
 
@@ -30,7 +31,25 @@ int main()
 	std::cout << std::endl;
 	container2.showData();
 
-	concontainer = intersecData(container1, container2);
+	concontainer = intersecData(container1, container2);*/
+	
+	Testing test_container;
+
+	Testing* container = &test_container;
+	
+	int n = 0;
+	std::cout << "Введите размер массива: ";
+	std::cin >> n;
+	std::cout << std::endl;
+
+	int* arr = new int[n];
+
+	container->inputData(arr, n);
+
+	container->showData();
+
+	std::cout << container->getSize();
+
 
 	return 0;
 }

@@ -9,14 +9,14 @@ set(INCLUDE
 	"inc/main.h"
 	"inc/containers.h"
 	"inc/functions.h"
-	"inc/pimpl.h"
+	"inc/test.h"
 )
 
 set(SRC
 	"src/main.cpp"
 	"src/containers.cpp"
 	"src/functions.cpp"
-	"src/pimpl.cpp"
+	"src/test.cpp"
 )
 
 add_executable (Homework_11
